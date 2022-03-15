@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@1,300&display=swap');  
+ 
+ *{
+    padding: 0;
+    margin: 0;
+          
+} 
+
+body {
+    background-image: url(../img/depositphotos_517281962-stock-video-animation-of-spots-of-lights.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "botonera" "cuerpo1" "cuerpo2" "cuerpo3" "pie";
+    flex-direction: column;
+    
+    
+}
+
+@media only screen and (mind-width: 615px) {  
+   body {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "botonera  botonera"
+      "cuerpo1  cuerpo1"
+      "cuerpo2  cuerpo2"
+      "cuerpo3  cuerpo3"
+      "pie  pie";
+      flex-direction: row;
+      flex-wrap: wrap;
+    }  
+} 
+
+@media only screen and (mind-width: 1024px) {
+  body{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:   
+      "cuerpo1 cuerpo1 cuerpo1"
+      "cuerpo2  cuerpo2 cuerpo2"
+      "cuerpo3  cuerpo3 cuerpo3"
+      "pie pie pie";
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+    }
+}
+
+
+
+
+
+
+div nav a{
+    margin-right: 10px;
+    margin-top: 0;
+    padding:10px 10px;
+    box-sizing: border-box ;
+    
+      
+}     
+
+ div nav ul li{
+    
+    list-style: none; 
+    display:inline-block;
+    margin-right: 10px;
+    margin-top: 0px;    
+    box-sizing: border-box;
+    
+}
+
+div nav ul li a{
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    font-size:2rem;
+    color: rgb(12, 9, 10);
+    display: flex; 
+   
+}  
+
+
+
+  
+
+/* selectores de etiquetas */
+html{
+    font-size: 62.5%;
+}
+
+main section div{
+    width: 100%;
+    height: auto;
+    overflow: 0;
+    margin: auto;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+main section div p{
+    width: 100%;
+    height: auto;
+    overflow: 0;
+    margin: 30px 10px;
+    padding: 30px 10px; 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400 ;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: rgb(63, 55, 58)
+} 
+
+html{
+    font-size: 62.5%;
+}
+
+h1,h2,h3{
+    font-family: 'Bebas Neue', cursive;
+    color:rgb(12, 9, 10) 
+}
+
+ h1{
+    font-size: 4rem
+}
+
+h2{
+    font-size: 3rem
+}
+
+h3{
+    font-size: 2rem
+}
+
+
+footer p{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size:2rem;
+    color: rgb(12, 9, 10); 
+}  
+
+footer a{ 
+    width: 10px;
+    height: 10px;  
+    padding: 30px;
+}
+
+footer a img{
+    width: 50px; 
+    font-display:inline-block;  
+}
+
+/* selectores de clases */
+
+.textCenter{
+    text-align: center;
+}
+
+.textRigth{
+    text-align: right;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+
+
+.flex-direction{
+    flex-direction: column;
+
+}
+.flex-direction{
+    flex-direction: row;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.box1{
+    justify-items: start;
+    padding:20%;
+    height:20% ;
+}
+.box2{
+    justify-items: end;
+    padding:20%;
+    height:20% ;
+}
+
+.box3{
+    justify-items: start; 
+    padding:20%;
+    height:20% ; 
+}
+.box4{
+    justify-items: end;
+    padding:20%;
+    height:20% ;
+}
+.box5{
+    justify-items: start; 
+    padding:20%;
+    height:20% ;
+}
+.box6{
+    justify-items: end;
+    padding:20%;
+    height:20% ;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+
+    
+
+}
+ 
+.container2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+   
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    
+.container4{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.container5{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.container6{
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.container7{
+    display: flex;
+    
+    padding: 10px;
+}
+
+.container8{
+    
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.container9{
+    
+    justify-content: flex-end;
+    padding: 10px;
+}
+    
+.container10{
+    display: flex;    
+    padding: 10px;   
+}
+
+.container11{
+    display: flex;    
+}
+
+.container12{
+     display: flex;    
+}
+
+.container13{
+     display: flex;    
+}
+
+div form fieldset{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400 ;
+    font-size: 1rem;
+    color: rgb(63, 55, 58)
+}
+
+/* grid */
+.container0{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat( 3 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px 0 px;
+    grid-template-areas: 
+    "botonera botonera botonera"
+    "cuerpo1 cuerpo1 cuerpo1"
+    "cuerpo2 cuerpo2 cuerpo2"
+    "cuerpo3 cuerpo3 cuerpo3"
+    "pie pie pie";
+}
+#container0{
+    grid-area: container0;
+}
+
+.contaner0{
+    display: flex;
+
+}
+
+#botonera{
+    grid-area: botonera;
+}
+
+
+
+#cuerpo1{
+    grid-area: cuerpo1;
+}
+.cuerpo1{
+    display:flex
+}
+
+#cuerpo2{
+    grid-area:cuerpo2 ;
+}
+.cuerpo2{
+    display:flex
+}
+
+#cuerpo3{
+    grid-area: cuerpo3;
+}
+.cuerpo3{
+    display: flex;
+}
+
+#pie{
+    grid-area: pie;
+}
+.pie{
+    display: flex;
+}
+
+/* posiciones de elementos */
+.justify-items{ 
+    justify-items:end; 
+} 
+
+.align-items{
+    align-items: center;
+}
+ /* posicion del contenido */
+
+ .justify-content{
+     grid-template-columns: repeat(3,auto );
+     height: 500px;
+     justify-content: space-evenly;
+}
+
+ .align-content{
+     align-content: center;
+}
+
+
+
